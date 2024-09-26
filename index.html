@@ -13,196 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
-  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://digitalnsw.github.io/nsw-design-system/docs/css/docs.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>    
-
-<style>
-/* Overide of DCS style */
-/*
-.nsw-card:hover .nsw-card__content {
-    background-color: var(--nsw-brand-supplementary) !important;
-}
-*/
-
-.fade {
-    opacity: 0.3;
-}
-.nsw-section.nsw-section--image {
-    background-color: var( --nsw-brand-dark);
-    background-image: url(https://cdn.aristotle.ninja/media/platypusstaging/uploads/2024/08/20/f9c53d68-5eb9-11ef-927c-0a58a9feac02.jpg);
-}
-ul.breadcrumb li:nth-child(2) {
-    display: none;
-}
-
-.light-block {
-    background-color: var(--nsw-brand-light); 
-}
-
-.dark-block {
-    background-color: var(--nsw-brand-dark); 
-}
-/*
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-*/
-
-/* NAV bar menu = START */
-.navbar {
-  overflow: hidden;
-  background-color: #333; 
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: #22272B;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: var(--nsw-hover);
-}
-
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #ffffff;
-  width: 100%;
-  z-index: 1;
-}
-
-.subnav-content a {
-  float: left;
-  color: #22272B;
-  text-decoration: none;
-}
-
-.subnav-content a:hover {
-  background-color: #eee;
-  color: black;
-}
-
-.subnav:hover .subnav-content {
-  display: flex;
-  flex-direction: column;
-  padding: 48px 40px 48px 40px;
-
-}
-
-.submenu-header {
-    .nsw-main-nav__title a {
-        color: var(--nsw-brand-dark);
-    }
-
-    p {
-        margin: 0px 16px;
-    }
-}
-
-.submenu-list {
-    display: flex;
-    flex-direction: row;
-    margin: 16px 16px 0px 16px;
-}
-
-.submenu-content {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    margin: 16px 8px 0px 8px;
-
-        a {
-            color: var(--nsw-brand-dark) !important;
-            border-top: solid 1px var(--nsw-grey-04);
-        }
-
-        a:last-child {
-            color: var(--nsw-brand-dark) !important;
-            border-top: solid 1px var(--nsw-grey-04);
-            border-bottom: solid 1px var(--nsw-grey-04);
-        }
-
-}
-/* NAV bar menu = END */
-        
-/* Tabs menu = START */
-    
-.tabs {
-    position: relative;   
-    min-height: 300px; /* This part sucks */
-    clear: both;
-    margin: 25px 0;
-}
-.tab {
-    float: left;
-}
-.tab label {
-    font-size: 16px;
-    color: var(--nsw-brand-dark);
-    font-weight: 700;
-    background: #ffffff; 
-    padding: 12px 16px; 
-    margin-left: -1px; 
-    position: relative;
-    left: 1px; 
-    cursor: pointer;
-}
-    
-.tab label:hover {
-    background-color: var(--nsw-hover);
-}
-    
-.tab [type=radio] {
-    display: none;   
-}
-.content {
-    position: absolute;
-    top: 33px;
-    left: 0;
-    background: white;
-    right: 0;
-    bottom: 0;
-    padding: 24px 16px;
-    border-bottom: 1px solid var(--nsw-grey-04);
-    border-top: 2px solid var(--nsw-grey-04);
-}
-[type=radio]:checked ~ label {
-    background: white;
-    border-bottom: 2px solid var(--nsw-brand-accent);
-    z-index: 2;
-}
-[type=radio]:checked ~ label ~ .content {
-    z-index: 1;
-}
-
-/* Tabs menu = END */
-        
-    </style>
-    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <script src="https://digitalnsw.github.io/nsw-design-system/docs/js/docs.js"></script>
 </head>
 
 <body>
@@ -397,9 +213,43 @@ body {
                 </div>
             </li>
             <li class="subnav">
-              <a href="/pages/test.html">
-                <span>Test page</span>
+                <a href="pages/faq.html" class="subnavbtn">FAQ <span class="material-icons nsw-material-icons">keyboard_arrow_right</span></a>
+                <div class="subnav-content">
+                    <div class="submenu-header">
+                        <div class="nsw-main-nav__title">
+                            <a href="pages/faq.html">
+                                <span>View all Frequently Asked Questions</span>
+                                <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+                            </a>
+                        </div>
+<!--
+                        <p>
+                            Placeholder text.
+                        </p>
+-->
+                    </div>
+                    <div class="submenu-list">
+                        <div class="submenu-content">
+                            <a href="pages/faq-general.html">General FAQ</a>
+                            <a href="pages/faq-owners.html">Owners and stewards FAQ</a>
+                        </div>
+                        <div class="submenu-content">
+                            <a href="#team">About access policies</a>
+                            <a href="#careers">Consent and collection notice library</a>
+                        </div>
+                        <div class="submenu-content">
+                            <a href="#team">Data dictionary library</a>
+<!--                            <a href="#careers">Other</a>-->
+                        </div>
+                    </div>
+                </div>
+            </li>
+<!--
+            <li class="subnav">
+              <a href="/pages/faq.html">
+                <span>FAQ</span>
               </a>    </li>
+-->
             <li style="position: absolute; right: 90px">
               <a href="https://staging.platypus.aristotle.ninja/login?next=/account/home/">
                 <span>Login</span>
@@ -540,7 +390,7 @@ body {
 
 <!-- Further info component = Start -->    
 
-    <section class="nsw-section dark-block">
+    <section class="nsw-section info-block">
         <div class="nsw-container">
             <div class="nsw-grid">
                 <div class="nsw-col nsw-col-lg-4">
@@ -553,10 +403,10 @@ body {
 -->
                         <div class="nsw-card__content">
                             <div class="nsw-card__title">
-                                <a href="/search">Suggest a new asset</a>
+                                <a href="https://staging.platypus.aristotle.ninja/search/?q=">Suggest a new asset</a>
                             </div>
                             <div class="nsw-card__copy">
-                              <p>Do you have a new asset that is not in the IAR?Submit the form to suggest a new asset registration.</p>
+                              <p>Do you have a new asset that is not in the IAR? Submit the form to suggest a new asset registration.</p>
                             </div>
                             <span class="material-icons nsw-material-icons" focusable="false"
                                   aria-hidden="true">east</span>
@@ -573,7 +423,7 @@ body {
 -->
                         <div class="nsw-card__content">
                             <div class="nsw-card__title">
-                                <a href="/search">Create metadata</a>
+                                <a href="https://staging.platypus.aristotle.ninja/search/?q=">Create metadata</a>
                             </div>
                             <div class="nsw-card__copy">
                               <p>Do you want to create metadata for your data asset? Reach out to data management for assistance.</p>
@@ -593,7 +443,7 @@ body {
 -->
                         <div class="nsw-card__content">
                             <div class="nsw-card__title">
-                                <a href="/search">Improve data quality</a>
+                                <a href="https://staging.platypus.aristotle.ninja/search/?q=">Improve data quality</a>
                             </div>
                             <div class="nsw-card__copy">
                               <p>Conduct a data quality self assessment or request an advanced review.</p>
@@ -615,7 +465,7 @@ body {
 -->
                         <div class="nsw-card__content">
                             <div class="nsw-card__title">
-                                <a href="/search">Review your data governance practice</a>
+                                <a href="https://staging.platypus.aristotle.ninja/search/?q=">Review your data governance practice</a>
                             </div>
                             <div class="nsw-card__copy">
                               <p>Refine you data governance.</p>
@@ -652,7 +502,7 @@ body {
 -->
                         <div class="nsw-card__content">
                             <div class="nsw-card__title">
-                                <a href="/search">Contact us</a>
+                                <a href="mailto:iaradmin@det.nsw.edu.au?subject=Information Asset Register website contact">Contact us</a>
                             </div>
                             <div class="nsw-card__copy">
                               <p>Got a question? Contact data management.</p>

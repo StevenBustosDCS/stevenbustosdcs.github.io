@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Overide of DCS style */
+/*
+.nsw-card:hover .nsw-card__content {
+    background-color: var(--nsw-brand-supplementary) !important;
+}
+*/
+
+.fade {
+    opacity: 0.3;
+}
+.nsw-section.nsw-section--image {
+    background-color: var( --nsw-brand-dark);
+    background-image: url(https://cdn.aristotle.ninja/media/platypusstaging/uploads/2024/08/20/f9c53d68-5eb9-11ef-927c-0a58a9feac02.jpg);
+}
+ul.breadcrumb li:nth-child(2) {
+    display: none;
+}
+
+.info-block {
+    background-color: var(--nsw-status-info-bg); 
+}
+
+.light-block {
+    background-color: var(--nsw-brand-light); 
+}
+
+.dark-block {
+    background-color: var(--nsw-brand-dark); 
+}
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+*/
+
+/* NAV bar menu = START */
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #22272B;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: var(--nsw-hover);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: #22272B;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px 48px 40px;
+
+}
+
+.submenu-header { 
+    .nsw-main-nav__title a {
+        color: var(--nsw-brand-dark);
+    }
+
+    p {
+        margin: 0px 16px;
+    }
+}
+
+.submenu-list {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 16px 0px 16px;
+}
+
+.submenu-content {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 16px 8px 0px 8px;
+        a {
+            color: var(--nsw-brand-dark) !important;
+            border-top: solid 1px var(--nsw-grey-04);
+        }
+
+        a:last-child {
+            color: var(--nsw-brand-dark) !important;
+            border-top: solid 1px var(--nsw-grey-04);
+            border-bottom: solid 1px var(--nsw-grey-04);
+        }
+}
+/* NAV bar menu = END */
+        
+/* Tabs menu = START */
+    
+.tabs {
+    position: relative;   
+    min-height: 300px; /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+}
+.tab {
+    float: left;
+}
+.tab label {
+    font-size: 16px;
+    color: var(--nsw-brand-dark);
+    font-weight: 700;
+    background: #ffffff; 
+    padding: 12px 16px; 
+    margin-left: -1px; 
+    position: relative;
+    left: 1px; 
+    cursor: pointer;
+}
+    
+.tab label:hover {
+    background-color: var(--nsw-hover);
+}
+    
+.tab [type=radio] {
+    display: none;   
+}
+.content {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 24px 16px;
+    border-bottom: 1px solid var(--nsw-grey-04);
+    border-top: 2px solid var(--nsw-grey-04);
+}
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 2px solid var(--nsw-brand-accent);
+    z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
+/* Tabs menu = END */
+        
